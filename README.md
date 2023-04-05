@@ -1,0 +1,39 @@
+# MemoryManagementSystem
+
+This project simulates how memory is managed by the operating system. 
+
+The project has two parts: Manual memory management, and Auto memory management.
+
+
+## Manual memory management
+
+This part represents a contagious memory that stores processes and deal with it efficiently based on user selection.
+
+__the user can enter a command from the following__:
+
+•	RQ command: for adding a new process in the memory with a specified size and algorithm such as F for First Fit. 
+•	RL command: for deleting a process from the memory, but if there is a free space near to the current process the system will compact unused holes into one block automatically.
+•	C command: for compacting any free holes that are not near to each other into one single hole.
+•	STAT command: for showing the state of the memory. 
+•	X command: for exiting the program
+
+
+The user can also choose a specific algorithm to fill the memory, __the algorithms supported are__:
+• First Fit
+• Best Fit
+• Worst Fit
+
+
+## Auto memory management
+
+This part translates a logical address to its physical address by using the [page table](https://github.com/ReemmaMalki/MemoryManagementSystem/blob/master/correct.txt) , storing a value from the 
+
+correct file into its physical address by taking the logical address from the [address file](https://github.com/ReemmaMalki/MemoryManagementSystem/blob/master/addresses.txt) .
+
+The system will Store all the signed bytes value to its corresponding physical address by the given logical address
+and Retrieve 5 random physical address to check if it's stored in the right corresponds logical address 
+(it will repeat the test 5 times for different logical address), 
+and Ensure that our program will deal with the partially loaded process by counting the page faults. Finally, the system will
+deal with the page replacement and its use when the physical memory is full, and we need to add new page so the system will
+automatically choose a page from the page table to do this replacement.
+__Replacement is done by some algorithms; we choose FIFO replacement algorithm.__
