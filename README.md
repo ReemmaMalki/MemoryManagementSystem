@@ -11,17 +11,17 @@ This part represents a contagious memory that stores processes and deal with it 
 
 
 _The user can enter a command from the following_:
-•	RQ command: for adding a new process in the memory with a specified size and algorithm such as F for First Fit. 
-•	RL command: for deleting a process from the memory, but if there is a free space near to the current process the system will compact unused holes into one block automatically.
-•	C command: for compacting any free holes that are not near to each other into one single hole.
-•	STAT command: for showing the state of the memory. 
-•	X command: for exiting the program
+1- 	RQ command: for adding a new process in the memory with a specified size and algorithm such as F for First Fit. 
+2-	RL command: for deleting a process from the memory, but if there is a free space near to the current process the system will compact unused holes into one block automatically.
+3-	C command: for compacting any free holes that are not near to each other into one single hole.
+4-	STAT command: for showing the state of the memory. 
+5-	X command: for exiting the program
 
 
 The user can also choose a specific algorithm to fill the memory, _the algorithms supported are_:
-• First Fit
-• Best Fit
-• Worst Fit
+* First Fit
+* Best Fit
+* Worst Fit
 
 
 ## Auto memory management
